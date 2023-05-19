@@ -2,7 +2,7 @@ import { useState } from "react";
 import Header from "./components/Header";
 import Links from "./components/Links";
 import { BsTwitter } from "react-icons/bs";
-import {RiLinkedinFill} from "react-icons/Ri"
+import { BsLinkedin } from "react-icons/bs";
 import { BsGithub } from "react-icons/bs";
 import { BsInstagram } from "react-icons/bs";
 import Footer from "./components/Footer";
@@ -24,7 +24,7 @@ const App = () => {
     },
     {
       id: 3,
-      img:  <RiLinkedinFill className="" size={25} />,
+      img:  <BsLinkedin className="" size={25} />,
       link:"https://www.linkedin.com/in/yash-pandey-53aa3a21b",
       name: "Linkedln",
     },
