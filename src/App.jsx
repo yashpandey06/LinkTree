@@ -1,30 +1,36 @@
 import { useState } from "react";
 import Header from "./components/Header";
 import Links from "./components/Links";
+import { BsTwitter } from "react-icons/bs";
+import {RxLinkedinLogo} from "react-icons/Rx"
+import { BsGithub } from "react-icons/bs";
+import { BsInstagram } from "react-icons/bs";
+import Footer from "./components/Footer";
+
 
 const App = () => {
   const [links] = useState([
     {
       id: 1,
-      img: "hello",
+      img: <BsGithub className="" size={25} />,
       link:"https://github.com/yashpandey06",
       name: "Github",
     },
     {
       id: 2,
-      img: "hello",
+      img:  <BsTwitter className="" size={25} />,
       link:"https://twitter.com/Yashpandey7052?t=LOQ6dVSfuTHG6RWUkDpOLA&s=08",
       name: "Twitter",
     },
     {
       id: 3,
-      img: "hello",
+      img:  <RxLinkedinLogo className="" size={25} />,
       link:"https://www.linkedin.com/in/yash-pandey-53aa3a21b",
       name: "Linkedln",
     },
     {
       id: 4,
-      img: "hello",
+      img: <BsInstagram  size={25}/>,
       link:"https://instagram.com/__yash_pandey__?igshid=MzNlNGNkZWQ4Mg==",
       name: "Instagram",
     },
@@ -34,6 +40,7 @@ const App = () => {
       <Header />
 
       <Links key={links.id} links={links} />
+      <Footer />
     </div>
   );
 };
