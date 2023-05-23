@@ -15,7 +15,7 @@ const Header = () => {
           {
             <Typewriter
               options={{
-                strings: [" Hey..I am a MERN Stack developer."],
+                strings: ["Connect to me "],
                 delay: 85,
                 autoStart: true,
                 loop: true,
